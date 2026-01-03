@@ -1,0 +1,14 @@
+.setup-title-text {
+  font-size: 50px;
+  margin: 20px;
+}
+
+.setup-box {
+  width: 700px;
+  height: 500px;
+  border: 3px solid black;
+  padding: 10px;
+  margin: 10px;
+
+}
+
