@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Wellcome from './Pages/Wellcome'
 import SetUp from './Pages/SetUp'
+import Game from './Pages/Game'
 import './App.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Wellcome/>}/>
         <Route path="/Setup" element={<SetUp />}/>
+        <Route path="/Game" element={<Game />}/>
       </Routes>
     </Router>
   )

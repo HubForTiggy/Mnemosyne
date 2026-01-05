@@ -1,4 +1,4 @@
-import '../styles.css'
+import '../assets/css/big-button.css'
 import { Link } from "react-router-dom";
 
 
@@ -8,7 +8,7 @@ type ButtonLinkProp = {
     className?: string      // optional styling
 };
 
-function ButtonLink({ routeTo, text, className } : ButtonLinkProp) {
+function ButtonLink({ routeTo, text, className } : ButtonLinkProp ) {
     return (
         <Link to={routeTo}> 
             <button className={className}>

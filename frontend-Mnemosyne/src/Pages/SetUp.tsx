@@ -1,6 +1,6 @@
 import "../Assets/css/setup.css";
 import ButtonLink from "../Components/ButtonLink"
-import "../styles.css"
+import '../assets/css/big-button.css'
 
 function SetUp() {
     return (
@@ -27,7 +27,7 @@ function SetUp() {
                 </div>
                 <button type="button">Save</button>
             </div>
-            <ButtonLink routeTo="/" text="Continue" className="big-button"/>
+            <ButtonLink routeTo="/Game" text="Continue" className="big-button"/>
             <ButtonLink routeTo="/" text="Go Back!" className="big-button"/>
 
 
