@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import '../assets/css/big-button.css'
 import '../assets/css/game.css'
 
@@ -36,24 +36,6 @@ function Game( {wordBankLst} : GameProp) {
         btn3Ref.current.disabled = status
         btn4Ref.current.disabled = status
     }
-
-    function test() {
-        console.log(wordBankLst.current)
-    }
-
-    function question(index : number, lenOfSequence : number) {
-        console.log(`index: ${index}, seq: ${lenOfSequence}`)
-
-        // Randomly pick a correct btn
-        const correctBtn = btnsLst[Math.floor(Math.random() * 4)]
-
-        // Make inner fail() and correct()
-
-        // Create a loop to go btn list and assign text and scripts to each btn
-        correctBtn.current!.textContent = wordBankLst.current[index]
-
-    }
-
     
     return (
         <div> 
@@ -65,7 +47,6 @@ function Game( {wordBankLst} : GameProp) {
                 <GameWindow active={active} wordBankLst={wordBankLst.current} 
                 toggleBtnsFunction={(status: boolean) => toggleBtns(status)}
                 endFunction={() => setActive(false)}
-                setUpBtnsForQuestion={(index: number, len: number) => question(index, len)}
                 btnList={btnsLst!}/>
 
                 

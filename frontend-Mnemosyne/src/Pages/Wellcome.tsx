@@ -1,5 +1,5 @@
 import ButtonLink from "../Components/ButtonLink"
-import "../Assets/css/wellcome.css";
+import "../assets/css/wellcome.css";
 import '../assets/css/big-button.css'
 
 function Wellcome() {

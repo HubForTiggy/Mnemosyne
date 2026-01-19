@@ -1,4 +1,4 @@
-import "../Assets/css/setup.css";
+import "../assets/css/setup.css";
 import ButtonLink from "../Components/ButtonLink"
 import '../assets/css/big-button.css'
 

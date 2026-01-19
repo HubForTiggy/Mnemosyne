@@ -5,11 +5,10 @@ type GameWindowProp = {
     wordBankLst: string[] 
     toggleBtnsFunction: (status: boolean) => void
     endFunction: () => void 
-    setUpBtnsForQuestion: (i : number, length : number) => void
     btnList:  React.RefObject<HTMLButtonElement | null>[]
 }
 
-function GameWindow({ active, wordBankLst, toggleBtnsFunction, endFunction, setUpBtnsForQuestion, btnList} : GameWindowProp) {
+function GameWindow({ active, wordBankLst, toggleBtnsFunction, endFunction, btnList} : GameWindowProp) {
     
     const [index, setIndex] = useState(-1)
 
@@ -36,23 +35,18 @@ function GameWindow({ active, wordBankLst, toggleBtnsFunction, endFunction, setU
 
         switch (chosenNum + 1) {
             case 1:
-                // setBoxText(getWord(true, "test 1"))
                 setBoxText("What was the 1st word shown?")
                 break
             case 2:
-                // setBoxText(getWord(true, "test 1"))
                 setBoxText("What was the 2nd word shown?")
                 break
             case 3:
-                // setBoxText(getWord(true, "test 1"))
                 setBoxText("What was the 3rd word shown?")
                 break
             case (range):
-                // setBoxText(getWord(true, "test 1"))
                 setBoxText("What was the last word shown?")
                 break    
             default:
-                // setBoxText(getWord(true, "working"))
                 setBoxText(`What was the ${chosenNum}th word shown?`)    
         }
         
