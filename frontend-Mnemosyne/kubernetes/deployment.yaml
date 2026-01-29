@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnemosyne-frontend-deployment
+  labels:
+    app: mnemosyne
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mnemosyne
+  template:
+    metadata:
+      labels:
+        app: mnemosyne
+    spec:
+      containers:
+      - name: mnemosyne
+        image: tasssadar/mnemosyne:latest
+        ports:
+        - containerPort: 4173
